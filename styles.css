@@ -1,0 +1,168 @@
+body {
+    font-family: Berlin Sans FB Demi;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+h1, h2 {
+    color: yellow;
+    font-family: Berlin Sans FB Demi;
+}
+
+#game-screen, #welcome-screen, #info-screen,#ongrats-screen{
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: #002D62;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+#leaderboard-screen{
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: #002D62;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:bold;
+    margin: 5px;
+    cursor: pointer;
+    background:#89CFF0;
+}
+
+input[type="text"]{
+    padding: 10px;
+    font-size: 25px;
+    color: blue;
+    font-weight:bold;
+    background: white;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 30px;
+    font-weight:bold;
+    color:blue;
+    text-align:center;
+    width: 20%;
+    margin-bottom: 10px;
+    background:#F0E68C;
+}
+
+#feedback {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#level-info, #timer {
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    color: #F0E68C;
+}
+
+#score{
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+#question{
+    font-family: Arial Black;
+    font-size: 30px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    color:white;
+  
+}
+
+#game-screen {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 50vh; /* Adjust to center vertically */
+}
+
+#leaderboard-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%; /* Adjust width as needed */
+    max-width: 600px; /* Optional: Set maximum width */
+    background-color: white;
+}
+
+#leaderboard-table-container {
+    max-height: 300px; /* Set a maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#leaderboard-table th {
+    padding: 10px; /* Adjust padding for header */
+    height: 10px; /* Fixed height for header row */
+    text-align: center;
+    background-color: #FFFF8F; /* Background color for better visibility */
+    font-weight: bold; /* Bold font for header */
+    position: sticky;  /* Fix the header at the top */
+    top: 0; 
+    z-index: 1;  
+    text-align: center;
+    border: 3px solid #ddd; /* Add border */
+}
+
+/* Style for the table body (td) */
+#leaderboard-table td {
+    padding: 10px; /* Adjust padding for table rows */
+    height: 10px; /* Set height for the body rows */
+    text-align: center;
+   
+}
+
+/* Optional: Style for alternating row colors */
+#leaderboard-table tr:nth-child(even) {
+    background-color: pink; /* Light background for alternating rows */
+    
+}
+
+#leaderboard-table tr:nth-child(odd) {
+    background-color: #89CFF0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#
+    

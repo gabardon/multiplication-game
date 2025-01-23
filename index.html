@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <h1>Multiplication Game</h1>
+        
+        <!-- Align input and start button in a container -->
+        <div class="input-button-container">
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <button id="start-btn">Start</button>
+        </div>
+
+        <div class="buttons">
+            <button id="info-btn">Info</button>
+            <button id="leaderboard-btn">Leaderboard</button>
+            <button id="exit-btn">Exit</button>
+        </div>
+    </div>
+
+    <div id="game-screen" style="display:none;">
+        <h2 id="player-greeting"></h2>
+        <p id="level-info"></p>
+        <p id="question"></p>
+        <input type="number" id="answer" placeholder="">
+        <div id="game-controls">
+            <!-- Timer and Score container -->
+            <div id="timer-score-container">
+                <div id="timer">0 seconds</div>
+                <div id="score">Score: 0</div>
+            </div>
+            <p id="feedback"></p>
+
+            <!-- Buttons container -->
+            <div id="buttons">
+                <button id="reset-btn">Reset</button>
+                <button id="submit-btn">Submit</button>
+                <button id="back-btn">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="info-screen" style="display:none;">
+        <h2>Game Info</h2>
+        <p>The game is about solving multiplication problems.</p>
+        <p>You will start from Level 1 and progress up to Level 11. Solve all questions correctly to move to the next level. Good luck!</p>
+        <button id="back-to-welcome-btn">Back to Welcome</button>
+    </div>
+
+<div id="leaderboard-screen" style="display:none;">
+    <h2 style="text-align:center;">Leaderboard</h2>
+    <div class="table-container">
+        <div id="leaderboard-table-container">
+            <table id="leaderboard-table" border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Last Level</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Player leaderboard entries will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button id="back-to-welcome-leaderboard-btn">Back to Welcome</button>
+    </div>
+</div>
+ 
+  
+    <div id="congrats-screen" style="display:none;">
+        <h2>Congratulations, <span id="congrats-player-name"></span>!</h2>
+        <p>You have completed all levels of the game!</p>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
