@@ -1,5 +1,5 @@
 const CACHE_NAME = "multiplication-game-cache-v1";
-const urlsToCache = ["/", "/index.html", "/style.css", "/script.js"];
+const urlsToCache = ["/", "/index.html", "/styles.css", "/script.js"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
