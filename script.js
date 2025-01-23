@@ -51,8 +51,15 @@ const correctSound = new Audio('correct.mp3');
 const wrongSound = new Audio('wrong.mp3');
 
 // Event listeners
+document.getElementById('leaderboard-btn').addEventListener('click', showLeaderboard);
+document.getElementById('back-to-welcome-leaderboard-btn').addEventListener('click', goBackToWelcome);
 document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('submit-btn').addEventListener('click', checkAnswer);
+document.getElementById('reset-btn').addEventListener('click', resetLevel);
+document.getElementById('back-btn').addEventListener('click', goBackToWelcome);
+document.getElementById('info-btn').addEventListener('click', showInfo);
+document.getElementById('back-to-welcome-btn').addEventListener('click', goBackToWelcome);
+document.getElementById('exit-btn').addEventListener('click', exitGame);
 playAgainBtn.addEventListener('click', playAgain);
 
 document.addEventListener('keydown', (event) => {
