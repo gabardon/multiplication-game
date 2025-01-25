@@ -54,6 +54,8 @@ const wrongSound = new Audio('wrong.mp3');
 document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('submit-btn').addEventListener('click', checkAnswer);
 playAgainBtn.addEventListener('click', playAgain);
+document.getElementById('leaderboard-btn').addEventListener('click', showLeaderboard);
+
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
