@@ -205,6 +205,9 @@ function checkAnswer() {
         wrongSound.play();
     }
 
+    document.getElementById('leaderboard-btn').addEventListener('click', showLeaderboard);
+
+
     currentQuestionIndex++;
     feedbackTimeout = setTimeout(() => {
         feedbackEl.textContent = "";
